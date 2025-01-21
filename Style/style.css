@@ -201,9 +201,11 @@ h1 .blue-text {
     font-weight: 700;
     text-align: center;
 }
-.card-2 h3{
+
+.card-2 h3 {
     padding-top: 10px;
 }
+
 .card p {
     color: rgb(128, 128, 128);
     font-family: Raleway;
@@ -211,7 +213,8 @@ h1 .blue-text {
     font-weight: 500;
     text-align: center;
 }
-.card button{
+
+.card button {
     color: rgb(100, 200, 255);
     border: none;
     background: none;
@@ -219,12 +222,14 @@ h1 .blue-text {
     font-size: 15.09px;
     font-weight: 700;
     text-align: center;
-    margin: 30px ;
+    margin: 30px;
 }
-.card-2 button{
+
+.card-2 button {
     color: rgb(240, 170, 0);
 }
-.card-3 button{
+
+.card-3 button {
     color: rgb(135, 0, 255);
 }
 
@@ -244,4 +249,35 @@ h1 .blue-text {
     border-radius: 18.86px;
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.icon-btn {
+    width: 130px;
+    margin: 10px auto;
+    display: flex;
+}
+
+.icon-btn .icon-1 {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 5px;
+    padding: 15px 10px;
+    background: rgb(254, 163, 1);
+}
+.icon-btn .icon-2 {
+    width: 60px;
+    margin-left: 5px;
+    border-radius: 50%;
+    padding: 15px 10px;
+    background: rgb(254, 163, 1);
+}
+.icon-btn .icon-1:hover{
+    cursor: pointer;
+    background: none;
+    border: 2px solid orange;
+}
+.icon-btn .icon-2:hover{
+    cursor: pointer;
+    background: none;
+    border: 2px solid orange;
 }
