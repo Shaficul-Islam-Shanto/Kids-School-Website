@@ -1,3 +1,104 @@
-*{
-    background-color: azure;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.raleway-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    max-width:1546px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+/* .navbar> div{
+    justify-content: space-between;
+} */
+
+.nav-logo img {
+    width: 80px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    margin: 0px 50px;
+}
+
+.nav-logo span {
+    width: 170px;
+    color: rgb(17, 17, 17);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.nav-links {
+    width: 510px;
+    display: flex;
+    margin-left: 200px;
+    /* justify-content: space-between; */
+
+}
+
+.nav-links li {
+    list-style-type: none;
+    padding: 32px;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.nav-link-1 {
+    text-decoration: none;
+    color: rgb(254, 163, 1);
+}
+.nav-link-2 {
+    text-decoration: none;
+    color: rgb(1, 172, 253);
+
+}
+.nav-link-3 {
+    text-decoration: none;
+    color: rgb(5, 212, 223);
+}
+.nav-link-4 {
+    text-decoration: none;
+    color: rgb(93, 88, 239);
+}
+.nav-btn button{
+    width: 260px;
+    padding: 18px 10px;
+    margin: 0px 150px;
+    background: rgb(254, 163, 1);
+    border-radius: 15px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
