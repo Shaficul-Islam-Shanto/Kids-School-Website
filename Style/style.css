@@ -13,11 +13,6 @@
     font-style: normal;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 header {
     max-width: 1920px;
     display: flex;
@@ -25,12 +20,13 @@ header {
 }
 
 .navbar {
-    max-width:1546px;
+    max-width: 1546px;
+    font-family: Quicksand;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    margin: 10px 0px;
+    margin: 10px auto;
 }
 
 /* .navbar> div{
@@ -79,24 +75,76 @@ header {
     text-decoration: none;
     color: rgb(254, 163, 1);
 }
+
 .nav-link-2 {
     text-decoration: none;
     color: rgb(1, 172, 253);
 
 }
+
 .nav-link-3 {
     text-decoration: none;
     color: rgb(5, 212, 223);
 }
+
 .nav-link-4 {
     text-decoration: none;
     color: rgb(93, 88, 239);
 }
-.nav-btn button{
+
+.nav-btn button {
     width: 260px;
     padding: 18px 10px;
     margin: 0px 150px;
     background: rgb(254, 163, 1);
+    border-radius: 15px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.banner-container {
+    margin: 0 auto;
+}
+
+.banner {
+    width: 1155px;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.banner-description {
+    width: 640px;
+    margin: 0px 50px;
+    font-family: Quicksand;
+}
+
+.banner-description h1 {
+    margin: 24px 0px;
+    font-size: 56px;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+}
+
+.banner-description h1 .orange-text {
+    color: rgb(254, 163, 1);
+}
+
+h1 .blue-text {
+    color: rgb(1, 172, 253);
+}
+
+.banner-description p {
+    margin: 24px 0px;
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 400;
+}
+.banner-description button{
+    width: 260px;
+    padding: 18px 10px;
+    background: rgb(17, 17, 17);
     border-radius: 15px;
     border: none;
     color: rgb(255, 255, 255);
