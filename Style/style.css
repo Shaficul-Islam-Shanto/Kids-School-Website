@@ -19,13 +19,13 @@
 }
 
 header {
-    max-width: 1920px;
+    width: 1920px;
     display: flex;
     justify-content: center;
 }
 
 .navbar {
-    max-width: 1546px;
+    width: 1546px;
     font-family: Quicksand;
     display: flex;
     justify-content: space-around;
@@ -34,33 +34,27 @@ header {
     margin: 10px auto;
 }
 
-/* .navbar> div{
-    justify-content: space-between;
-} */
-
 .nav-logo img {
     width: 80px;
 }
 
 .nav-logo {
+    width: 200px;
     display: flex;
     align-items: center;
-    width: 250px;
-    margin: 0px 50px;
 }
 
 .nav-logo span {
     width: 170px;
     color: rgb(17, 17, 17);
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
-    line-height: 30px;
 }
 
 .nav-links {
-    width: 510px;
+    width: 385px;
     display: flex;
-    margin-left: 200px;
+    /* margin-left: 200px; */
     /* justify-content: space-between; */
 
 }
@@ -69,10 +63,8 @@ header {
     list-style-type: none;
     padding: 32px;
     font-family: Quicksand;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0%;
     text-align: left;
 }
 
@@ -98,15 +90,62 @@ header {
 }
 
 .nav-btn button {
-    width: 260px;
-    padding: 18px 10px;
-    margin: 0px 150px;
+    width: 200px;
+    padding: 20px 60px;
+    /* margin: 0px 150px; */
     background: rgb(254, 163, 1);
     border-radius: 15px;
     border: none;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
+}
+
+.ham-icon i {
+    width: 46px;
+    height: 46px;
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        border: 2px solid orange;
+    }
+    header,
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-links,
+    .primary-btn {
+        display: none;
+    }
+    
+    .nav-logo img{
+        width: 60px;
+    }
+    .nav-logo span {
+        display: none;
+    }
+
+    .ham-icon i {
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 15px;
+        right: 3.75px;
+        top: 50px;
+    }
+    .navbar{
+        align-items: flex-start;
+        text-align: left;
+        margin: 0px;
+        padding-left: 10px;
+    }
 }
 
 .marquee-container {
@@ -128,13 +167,12 @@ header {
 
 .banner-description {
     width: 640px;
-    margin: 0px 50px;
     font-family: Quicksand;
 }
 
 .banner-description h1 {
     margin: 24px 0px;
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 700;
     color: rgb(17, 17, 17);
 }
@@ -150,7 +188,7 @@ h1 .blue-text {
 .banner-description p {
     margin: 24px 0px;
     color: rgb(17, 17, 17);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
@@ -161,10 +199,25 @@ h1 .blue-text {
     border-radius: 15px;
     border: none;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
 }
+.banner-img{
+    width: 100%;
+}
 
+
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column-reverse;
+        margin: 10px 20px;
+        width: ;
+    }
+    .banner-img{
+        padding: 20px 20px;
+        
+    }
+}
 .card-section {
 
     background-image: url("../assets/bg.png");
@@ -173,7 +226,7 @@ h1 .blue-text {
 .card-section h2 {
     margin: 80px 0px;
     color: rgb(0, 0, 0);
-    font-size: 46px;
+    font-size: 2.875rem;
     font-weight: 700;
     text-align: center;
 }
@@ -211,7 +264,7 @@ h1 .blue-text {
 
 .card h3 {
     color: rgb(32, 32, 32);
-    font-size: 24.52px;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
 }
@@ -223,7 +276,7 @@ h1 .blue-text {
 .card p {
     color: rgb(128, 128, 128);
     font-family: Raleway;
-    font-size: 15.09px;
+    font-size: 1rem;
     font-weight: 500;
     text-align: center;
 }
@@ -233,7 +286,7 @@ h1 .blue-text {
     border: none;
     background: none;
     font-family: Quicksand;
-    font-size: 15.09px;
+    font-size: 1rem;
     font-weight: 700;
     text-align: center;
     margin: 30px;
@@ -345,10 +398,10 @@ h1 .blue-text {
 .story-heading {
     color: rgb(0, 0, 0);
     font-family: Quicksand;
-    font-size: 46px;
+    font-size: 2.875rem;
     font-weight: 700;
-    line-height: 57.5px;
-    letter-spacing: 0%;
+    /* line-height: 57.5px;
+    letter-spacing: 0%; */
     text-align: center;
     margin: 80px 0px 0px 0px;
 }
@@ -356,7 +409,7 @@ h1 .blue-text {
 .story-card h4 {
     color: rgb(0, 0, 0);
     font-family: Quicksand;
-    font-size: 15.34px;
+    font-size: 1rem;
     font-weight: 800;
     line-height: 28.76px;
     letter-spacing: 0%;
@@ -367,7 +420,7 @@ h1 .blue-text {
 .card-1 h4 {
     color: rgb(0, 0, 0);
     font-family: Quicksand;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 38.35px;
     letter-spacing: 0%;
@@ -378,7 +431,7 @@ h1 .blue-text {
 .story-card p {
     color: rgb(102, 102, 102);
     font-family: Raleway;
-    font-size: 15.34px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 28.76px;
     letter-spacing: 0%;
@@ -400,7 +453,7 @@ h1 .blue-text {
     border-radius: 15px;
     border: none;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 30px auto 60px auto;
     cursor: pointer;
 
@@ -419,6 +472,7 @@ h1 .blue-text {
     border-radius: 47.93px;
     background: rgb(60, 216, 232);
 }
+
 .story-date .story-date-2 {
     padding: 10px;
     color: white;
@@ -428,6 +482,7 @@ h1 .blue-text {
     border-radius: 47.93px;
     background: rgb(149, 178, 38);
 }
+
 .story-date .story-date-3 {
     padding: 10px;
     position: absolute;
@@ -437,6 +492,7 @@ h1 .blue-text {
     border-radius: 47.93px;
     background: rgb(93, 88, 240);
 }
+
 .story-date .story-date-4 {
     padding: 10px;
     color: white;
@@ -446,6 +502,7 @@ h1 .blue-text {
     border-radius: 47.93px;
     background: rgb(149, 178, 38);
 }
+
 .story-date .story-date-5 {
     padding: 10px;
     position: absolute;
@@ -479,7 +536,7 @@ footer {
 .footer-logo-text {
     color: rgb(255, 255, 255);
     font-family: Quicksand;
-    font-size: 42.14px;
+    font-size: 2.625rem;
     font-weight: 700;
     line-height: 39.51px;
     letter-spacing: 0%;
@@ -489,7 +546,7 @@ footer {
 .footer-text {
     color: rgb(255, 255, 255);
     font-family: Quicksand;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 0%;
@@ -503,7 +560,7 @@ footer {
 .footer-links h4 {
     color: rgb(255, 255, 255);
     font-family: Quicksand;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0%;
@@ -514,7 +571,7 @@ footer {
 .footer-nav-links li .footer-nav-link {
     color: rgb(255, 255, 255);
     font-family: Quicksand;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     line-height: 25px;
     letter-spacing: 0%;
@@ -534,7 +591,7 @@ footer {
 .social-links h4 {
     color: rgb(255, 255, 255);
     font-family: Quicksand;
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 700;
     line-height: 26px;
     letter-spacing: 0%;
