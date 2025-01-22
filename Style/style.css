@@ -101,6 +101,7 @@ header {
     border: none;
     color: rgb(255, 255, 255);
     font-size: 20px;
+    cursor: pointer;
 }
 
 .banner-container {
@@ -150,13 +151,11 @@ h1 .blue-text {
     border: none;
     color: rgb(255, 255, 255);
     font-size: 20px;
+    cursor: pointer;
 }
 
 .card-section {
-    width: 1160px;
-    margin: 60px auto;
-    text-align: center;
-    font-family: Quicksand;
+    
     background-image: url("../assets/bg.png");
 }
 
@@ -170,6 +169,10 @@ h1 .blue-text {
 
 .card-container {
     display: flex;
+    width: 1160px;
+    margin: 60px auto;
+    text-align: center;
+    font-family: Quicksand;
 }
 
 .card-1 {
@@ -223,6 +226,7 @@ h1 .blue-text {
     font-weight: 700;
     text-align: center;
     margin: 30px;
+    cursor: pointer;
 }
 
 .card-2 button {
@@ -232,6 +236,7 @@ h1 .blue-text {
 .card-3 button {
     color: rgb(135, 0, 255);
 }
+
 
 .card-2 {
     width: 365px;
@@ -252,7 +257,7 @@ h1 .blue-text {
 }
 
 .icon-btn {
-    width: 130px;
+    width: 80px;
     margin: 10px auto;
     display: flex;
 }
@@ -263,21 +268,121 @@ h1 .blue-text {
     margin-right: 5px;
     padding: 15px 10px;
     background: rgb(254, 163, 1);
+    cursor: pointer;
 }
+
 .icon-btn .icon-2 {
     width: 60px;
+    cursor: pointer;
     margin-left: 5px;
     border-radius: 50%;
     padding: 15px 10px;
     background: rgb(254, 163, 1);
 }
-.icon-btn .icon-1:hover{
-    cursor: pointer;
+
+.icon-btn .icon-1:hover {
     background: none;
     border: 2px solid orange;
 }
-.icon-btn .icon-2:hover{
-    cursor: pointer;
+
+.icon-btn .icon-2:hover {
     background: none;
     border: 2px solid orange;
+}
+
+.our-stories-section{
+    background: url("../assets/bg.png"), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+.card-1{
+    grid-area: card-1;
+    height: 100%;
+}
+.card-2{
+    grid-area: card-2;
+}
+.card-3{
+    grid-area: card-3;
+}
+.card-4{
+    grid-area: card-4;
+    margin: 0px 30px;
+}
+.card-5{
+    grid-area: card-5;
+    margin: 0px 30px;
+}
+.story-card-container { 
+    padding: 60px 0px;
+    width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    gap: 19px;
+    grid-template-areas:
+     "card-1 card-2 card-3"
+     "card-1 card-4 card-5";
+}
+.story-card img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px ;
+}
+.story-heading{
+    color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 46px;
+font-weight: 700;
+line-height: 57.5px;
+letter-spacing: 0%;
+text-align: center;
+margin: 80px 0px;
+}
+.story-card h4{
+    color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 15.34px;
+font-weight: 800;
+line-height: 28.76px;
+letter-spacing: 0%;
+text-align: left;
+padding: 33px 37px ;
+}
+.card-1 h4{
+    color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 24px;
+font-weight: 700;
+line-height: 38.35px;
+letter-spacing: 0%;
+text-align: left;
+padding: 35px 30px;
+}
+
+.story-card p{
+    color: rgb(102, 102, 102);
+font-family: Raleway;
+font-size: 15.34px;
+font-weight: 500;
+line-height: 28.76px;
+letter-spacing: 0%;
+text-align: left;
+padding: 38px 34px;
+}
+.story-card{
+    border-radius: 16px;
+background: rgb(255, 255, 255);
+    width: calc(100% - 30px);
+}
+.our-stories-section button{
+    width: 260px;
+    padding: 18px 10px;
+    background: rgb(17, 17, 17);
+    border-radius: 15px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 60px auto;
+    cursor: pointer;
+
+}
+.our-stories-section .button{
+    text-align: center;
 }
