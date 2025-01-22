@@ -17,7 +17,6 @@
     margin: 0;
     padding: 0;
 }
-
 header {
     width: 1920px;
     display: flex;
@@ -201,18 +200,23 @@ h1 .blue-text {
 .banner-img img{
     margin: auto 140px;
 }
-
+.banner-img-1{
+    width: 100%;
+}
 
 @media screen and (max-width: 576px) {
     .banner{
         flex-direction: column-reverse;
-        margin: 10px 20px;
-        width: ;
+        text-align: center;
+        margin-left: -25px;
     }
-    .banner-img{
-        padding: 20px 20px;
-        
+    .banner-img img{
+        margin: 5px 0px;
     }
+    .banner-description h1{
+        margin: 0px;
+    }
+    
 }
 .card-section {
 
@@ -350,6 +354,19 @@ h1 .blue-text {
     border: 2px solid orange;
 }
 
+
+@media screen and (max-width: 576px) {
+    .card-container, .card{
+        flex-direction: column;
+    }
+    .card-1, .card-2, .card-3{
+        margin: 20px;
+    }
+    .icon-btn{
+        display: none;
+    }
+
+}
 .our-stories-section {
     background: url("../assets/bg.png"), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 }
@@ -465,7 +482,7 @@ h1 .blue-text {
     color: white;
     position: absolute;
     left: 10%;
-    top: 45%;
+    top: 40%;
     border-radius: 47.93px;
     background: rgb(60, 216, 232);
 }
@@ -475,7 +492,7 @@ h1 .blue-text {
     color: white;
     position: absolute;
     left: 10%;
-    top: 50%;
+    top: 55%;
     border-radius: 47.93px;
     background: rgb(149, 178, 38);
 }
@@ -485,7 +502,7 @@ h1 .blue-text {
     position: absolute;
     color: white;
     left: 10%;
-    top: 50%;
+    top: 55%;
     border-radius: 47.93px;
     background: rgb(93, 88, 240);
 }
@@ -495,7 +512,7 @@ h1 .blue-text {
     color: white;
     position: absolute;
     left: 10%;
-    top: 50%;
+    top: 55%;
     border-radius: 47.93px;
     background: rgb(149, 178, 38);
 }
@@ -505,9 +522,21 @@ h1 .blue-text {
     position: absolute;
     color: white;
     left: 10%;
-    top: 50%;
+    top: 55%;
     border-radius: 47.93px;
     background: rgb(149, 178, 38);
+}
+
+
+@media screen and (max-width: 576px) {
+    .story-card-container{
+        grid-template-areas:
+        "card-2s card-3s"
+        "card-4s card-5s";
+    }
+    .card-1s{
+        display: none;
+    }
 }
 
 footer {
@@ -599,4 +628,12 @@ footer {
 .social-links img {
     padding: 5px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .footer-container{
+        flex-direction: column;
+        padding: 40px 30px;
+    }
+
 }
